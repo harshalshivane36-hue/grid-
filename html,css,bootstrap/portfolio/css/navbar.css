@@ -1,0 +1,93 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarOne{
+    background-color: bisque;
+    height: 110px;
+}
+
+.logo{
+    display:inline-block;
+    width: 10%;
+    /* float: left; */
+}
+.imgLOGO{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+.menus{
+    list-style-type: none;
+    width: 40%;
+    float: right;
+    margin-top: 45px;
+}
+
+.navList{
+    display: inline-block;
+    margin-right: 10px;
+}
+.navItem:link{
+    color: brown;
+    text-decoration: none;
+    font-size: 22px;
+}
+.navItem:hover{
+    border-bottom: 2px solid red;
+}
+.navItem:active{}
+.navItem:visited{
+    color: brown;
+}
+.activeOne{
+    font-weight: 800;
+}
+.gradLinear{
+    background-image: linear-gradient(to right,#ffffa0, #ffc0cb);
+
+}
+.heroSection{
+    height: 450px;
+}
+.leftSide{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+}
+.rightSide{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+.IMGRight{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+.leftSide h2{
+    padding-top: 80px;
+    text-align: center;
+}
+.leftSide p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+.btnNew {
+    border: 1px solid pink;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.btnNew:hover{
+    background-image: linear-gradient(to right,#ffff7d, #ff95a6);
+}

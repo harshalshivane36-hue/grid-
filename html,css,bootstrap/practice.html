@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Form</h1>
+
+    <form action="" method="get" autocomplete="off">
+        <fieldset>
+        <!-- FIRST IMAGE CODE -->
+        <div>
+            <label for="fName">First name</label>
+            <input id="fName" type="text" pattern="[a-zA-Z]+" placeholder="add your first name" required>
+        </div>
+
+        <div>
+            <label for="lName">Last Name</label>
+            <input id="lName" type="text" value="Doe" name="lastName" required>
+        </div>
+
+        <div>
+            <label for="mobileNum">Contact Number</label>
+            <input type="text" id="mobileNum" pattern="+91-[^9876]{1}[0-9]{9}" placeholder="+91-8989898989">
+        </div>
+
+        <div>
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput">
+        </div>
+
+        <!-- SECOND IMAGE CODE -->
+        <div>
+            <label for="fileInput">Choose File</label>
+            <input type="file" id="fileInput">
+        </div>
+
+        <div>
+            <label for="colorInput">Select Color</label>
+            <input type="color" id="colorInput" value="#00ff00">
+        </div>
+
+        <br><br>
+
+        <div>
+            <label>Select Subjects</label><br>
+            <input type="checkbox" id="eng" name="subject1" value="english">
+            <label for="eng">English</label><br>
+
+            <input type="checkbox" id="mar" name="subjectTwo" value="marathi">
+            <label for="mar">Marathi</label><br>
+
+            <input type="checkbox" id="hin" name="subjectThree" value="hindi">
+            <label for="hin">Hindi</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subjectSelect">Select Multiple Subjects</label><br>
+            <select name="subject" id="subjectSelect" multiple>
+                <option value="english">ENGLISH</option>
+                <option value="marathi">MARATHI</option>
+                <option value="hindi">HINDI</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <!-- SUBMIT / BUTTON CONTROLS -->
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <input type="button" value="Register">
+            <button type="submit">Login</button>
+            <button type="button">Update</button>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .summary {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Table Caption -->
+        <caption>Semester 1 - Student Academic Performance</caption>
+        
+        <thead>
+            <tr>
+                <!-- rowspan: merges rows vertically -->
+                <th rowspan="2">Roll No</th>
+                <th rowspan="2">Student Name</th>
+                <!-- colspan: merges columns horizontally -->
+                <th colspan="2">Subject Marks</th>
+                <th rowspan="2">Total Marks</th>
+            </tr>
+            <tr>
+                <th>Mathematics</th>
+                <th>Science</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Alex Johnson</td>
+                <td>88</td>
+                <td>92</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Sophia Smith</td>
+                <td>95</td>
+                <td>89</td>
+                <td>184</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Liam Brown</td>
+                <td>76</td>
+                <td>81</td>
+                <td>157</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr class="summary">
+                <!-- colspan: spans across Roll No and Student Name columns -->
+                <td colspan="2">Class Average</td>
+                <td>86.3</td>
+                <td>87.3</td>
+                <td>173.6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Colony Application Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 550px;
+      margin: 30px auto;
+      padding: 25px;
+      background-color: #0d0f12;
+      color: #e0e6ed;
+      border: 2px solid #e25822;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(226, 88, 34, 0.3);
+    }
+    h2 {
+      text-align: center;
+      color: #e25822;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #a0aab5;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #f47c48;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background-color: #1a1d24;
+      color: #fff;
+      font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #e25822;
+      box-shadow: 0 0 5px rgba(226, 88, 34, 0.5);
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e25822;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #bf3e0f;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Mars Colony Initiative</h2>
+  <p class="subtitle">Off-World Relocation Application</p>
+
+  <form action="#" method="POST">
+    
+    <!-- Full Name -->
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="full_name" placeholder="e.g., Sarah Connor" required>
+    </div>
+
+    <!-- Age -->
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="65" placeholder="28" required>
+    </div>
+
+    <!-- Email Address -->
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="agent@marsmission.org" required>
+    </div>
+
+    <!-- Key Skills -->
+    <div class="form-group">
+      <label for="skills">Primary Skills:</label>
+      <input type="text" id="skills" name="skills" placeholder="e.g., Hydroponics, Mechanical Repair, First Aid" required>
+    </div>
+
+    <!-- Colony Role -->
+    <div class="form-group">
+      <label for="colony-role">Target Colony Role:</label>
+      <select id="colony-role" name="colony_role" required>
+        <option value="" disabled selected>Select a primary role</option>
+        <option value="engineer">Life Support Engineer</option>
+        <option value="botanist">Agricultural Specialist / Botanist</option>
+        <option value="medical">Medical Officer</option>
+        <option value="pilot">Shuttle / Rover Pilot</option>
+        <option value="builder">Habitat Construction Specialist</option>
+      </select>
+    </div>
+
+    <!-- Years of Experience -->
+    <div class="form-group">
+      <label for="experience">Years of Relevant Experience:</label>
+      <input type="number" id="experience" name="experience" min="0" max="50" placeholder="5" required>
+    </div>
+
+    <!-- Motivation Statement -->
+    <div class="form-group">
+      <label for="why-selected">Why Should You Be Selected?</label>
+      <textarea id="why-selected" name="why_selected" rows="4" placeholder="Explain your resilience, adaptability, and why you are essential for human survival on Mars..." required></textarea>
+    </div>
+
+    <!-- Apply Button -->
+    <button type="submit">Submit Application</button>
+
+  </form>
+
+</body>
+</html>
